@@ -126,7 +126,7 @@ class Game:
         return hangman, hangee
 
     def __assign_player_roles_pvc(self) -> Tuple[ComputerPlayer, HumanPlayer]:
-        """Assigns player roles in player vs computer mode (hangman and hangee)"""
+        """Assigns player roles in player vs computer mode (computer is always hangman)"""
         self.__player_1.role = self.__PLAYERS_ROLES[0]
         self.__player_2.role = self.__PLAYERS_ROLES[1]
         hangman, hangee = self.__player_1, self.__player_2
